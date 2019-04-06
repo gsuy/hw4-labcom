@@ -1,0 +1,30 @@
+body{
+	background-color: rgb(58, 52, 52);
+	color:#ffffff;
+	font: normal 16px Arial, Helvetica, sans-serif;
+	line-height:1.6em;
+	margin:0px;
+}
+
+.button{
+	background-color:rgb(197, 5, 15);
+	color:rgb(255, 255, 255);
+	padding:10px 15px;
+	border:none;
+}
+
+.table{
+	background-color:#454546;
+	color:#ffffff;
+	border:5px red solid;
+    padding: 20px;
+	margin:auto;
+}
+
+a:hover{
+	color:rgb(94, 72, 72);
+}
+
+.bb{
+    color: #fff;
+}
