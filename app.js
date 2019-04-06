@@ -23,49 +23,49 @@ const server = http.createServer((req, res) => {
             res.end(content);
         });
     } else if (req.url === '/PIC/1.jpg') {
-        fs.readFile(path.join(__dirname, 'hw4','PIC', '1.jpg'), (err, content) => {
+        fs.readFile(path.join(__dirname, 'hw4', 'PIC', '1.jpg'), (err, content) => {
             if (err) throw err;
             res.writeHead(200, { 'content-type': 'image/jpg' });
             res.end(content);
         });
-        
+
     } else if (req.url === '/PIC/11.jpg') {
-        fs.readFile(path.join(__dirname, 'hw4','PIC', '11.jpg'), (err, content) => {
+        fs.readFile(path.join(__dirname, 'hw4', 'PIC', '11.jpg'), (err, content) => {
             if (err) throw err;
             res.writeHead(200, { 'content-type': 'image/jpg' });
             res.end(content);
         });
     } else if (req.url === '/PIC/22.jpg') {
-        fs.readFile(path.join(__dirname, 'hw4','PIC', '22.jpg'), (err, content) => {
+        fs.readFile(path.join(__dirname, 'hw4', 'PIC', '22.jpg'), (err, content) => {
             if (err) throw err;
             res.writeHead(200, { 'content-type': 'image/jpg' });
             res.end(content);
         });
     } else if (req.url === '/PIC/33.jpg') {
-        fs.readFile(path.join(__dirname, 'hw4','PIC', '33.jpg'), (err, content) => {
+        fs.readFile(path.join(__dirname, 'hw4', 'PIC', '33.jpg'), (err, content) => {
             if (err) throw err;
             res.writeHead(200, { 'content-type': 'image/jpg' });
             res.end(content);
         });
     } else if (req.url === '/PIC/44.jpg') {
-        fs.readFile(path.join(__dirname, 'hw4','PIC', '44.jpg'), (err, content) => {
+        fs.readFile(path.join(__dirname, 'hw4', 'PIC', '44.jpg'), (err, content) => {
             if (err) throw err;
             res.writeHead(200, { 'content-type': 'image/jpg' });
             res.end(content);
         });
     } else if (req.url === '/style.css') {
-        fs.readFile(path.join(__dirname, 'hw4','style.css'), (err, content) => {
+        fs.readFile(path.join(__dirname, 'hw4', 'style.css'), (err, content) => {
             if (err) throw err;
             res.writeHead(200, { 'content-type': 'text/css' });
             res.end(content);
         });
-    }else if (req.url === '/data.js') {
-        fs.readFile(path.join(__dirname, 'hw4','data.js'), (err, content) => {
-            if (err) throw err; 
+    } else if (req.url === '/data.js') {
+        fs.readFile(path.join(__dirname, 'hw4', 'data.js'), (err, content) => {
+            if (err) throw err;
             res.writeHead(200, { 'content-type': 'text/javascript' });
             res.end(content);
         });
-    }else {
+    } else {
         fs.readFile(path.join(__dirname, 'hw4', '404.html'), (err, content) => {
             if (err) throw err;
             res.writeHead(404, { 'content-type': 'text/html' });
